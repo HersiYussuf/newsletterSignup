@@ -1,0 +1,82 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <!-- Add Tailwind CSS CDN or link to your compiled CSS file -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <div class="container mx-auto flex items-center justify-center">
+      <div class="left-section max-w-md p-8 bg-white rounded shadow-md">
+        <h1 class="text-3xl font-semibold mb-6">Stay updated!</h1>
+        <p class="text-gray-600 mb-4">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <div class="listSection">
+          <ol class="list-decimal pl-4">
+            <li class="mb-2 flex items-start">
+              <img
+                src="../assets/images/icon-list.svg"
+                alt="icon"
+                class="mr-2 w-4 h-4"
+              />
+              Product Discovery and building what matters
+            </li>
+            <li class="mb-2 flex items-start">
+              <img
+                src="../assets/images/icon-list.svg"
+                alt="icon"
+                class="mr-2 w-4 h-4"
+              />
+              Measuring to ensure updates are a success
+            </li>
+            <li class="mb-2 flex items-start">
+              <img
+                src="../assets/images/icon-list.svg"
+                alt="icon"
+                class="mr-2 w-4 h-4"
+              />
+              And much more
+            </li>
+          </ol>
+        </div>
+        <div class="submission mt-4">
+          <form
+            action="http://localhost:3000/submit"
+            method="post"
+            class="flex items-center"
+          >
+            <input
+              class="subscribe-email border border-gray-300 p-2 rounded-l focus:outline-none focus:border-blue-500"
+              type="text"
+              name="email"
+              placeholder="Your email address"
+            />
+            <button
+              class="subscribe-button bg-blue-500 text-white p-2 rounded-r hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue"
+              type="submit"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+      <!-- image section -->
+      <div class="heroimage ml-4">
+        <img
+          src="../assets/images/illustration-sign-up-desktop.svg"
+          alt="hero"
+          class="rounded shadow-md"
+        />
+      </div>
+    </div>
+  </body>
+</html>
